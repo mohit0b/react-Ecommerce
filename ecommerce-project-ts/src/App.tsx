@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router'
+import { HomePage } from './pages/home/HomePage';
+import { CheckoutPage } from './pages/checkout/CheckoutPage';
+import { OrdersPage } from './pages/orders/OrdersPage'
+import { TrackingPage } from './pages/TrackingPage'
+import { NotFoundPage } from './pages/NotFoundPage';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cart, setCart] = useState([]);
+  
+    const loadCart = async () => {
+      const response = await axios.get('/api/cart-items?expand=product')
+      setCart(response.data)
 
+    }
+  useEffect(() => {
+
+    loadCart();
+  }, [])
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route index element={<HomePage cart={cart} loadCart={loadCart} />} />
+      <Route path="checkout" element={<CheckoutPage cart={cart} loadCart= {loadCart} />} />
+      <Route path="orders" element={<OrdersPage cart={cart} />} />
+      <Route path="tracking" element={<TrackingPage />} />
+      <Route path="*" element={<NotFoundPage />}></Route>
+    </Routes>
   )
 }
 
