@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRON</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            /* Slimmer height like the image */
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            opacity: 0.9;
+        }
+
+        .header-container {
+            display: flex;
+            width: 100%;
+            padding: 0 40px;
+            /* Wider padding */
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        /* Bold, all-caps logo */
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #000;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navLink {
+            text-decoration: none;
+            color: #86868b;
+            /* Faded gray for inactive links */
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: 4px;
+        }
+
+        .navLink:hover {
+            color: #000;
+        }
+
+        /* The specific underline for the active link */
+
+
+        .right-section {
+            display: flex;
+            gap: 24px;
+            align-items: left;
+        }
+
+        .icon {
+            height: 18px;
+            width: 18px;
+        }
+
+        main {
+            padding-top: 120px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .Hero-section {
+            width: 100%;
+            height: 130vh;
+            /* Takes up 80% of the screen height */
+            margin-top: 100px;
+            /* Pushes it down so it starts below the header */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.png');
+            background-size: cover;
+            /* Makes the image fill the whole area */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            display: flex;
+            opacity: 1;
+            flex-direction: column;
+        }
+
+        .hero-text {
+            font-size: 120px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .hero-para {
+            
+            font-size: 25px;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.8);
+            /* Slightly faded description */
+            margin-bottom: 40px;
+            max-width: 510px;
+        }
+        
+        /* Base styles for both buttons */
+        .btn {
+            padding: 20px 40px;
+            /* px-10 py-5 */
+            font-family: 'Inter', sans-serif;
+            /* Your headline font */
+            font-weight: bold;
+            /* font-bold */
+            font-size: 0.875rem;
+            /* text-sm */
+            letter-spacing: 0.1em;
+            /* tracking-widest */
+            text-transform: uppercase;
+            /* uppercase */
+            border-radius: 8px;
+            /* rounded-lg */
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* transition-all */
+        }
+
+        /* Explore Gallery Button */
+        .btn-explore {
+            background-color: #05121f;
+            /* Your primary color */
+            color: #ffffff;
+            /* text-on-primary */
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            /* shadow-xl */
+        }
+
+        .btn-explore:hover {
+            background-color: #1a2a3a;
+            /* hover:bg-primary-container */
+            transform: translateY(-2px);
+        }
+
+        /* The Monolith Series Button */
+        .btn-monolith {
+            background-color: rgba(255, 255, 255, 0.1);
+            /* bg-white/10 */
+            backdrop-filter: blur(12px);
+            /* backdrop-blur-md */
+            -webkit-backdrop-filter: blur(12px);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-left: 10px;
+        }
+
+        .btn-monolith:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            /* hover:bg-white/20 */
+        }
+        .hero-components{
+            margin-left: 120px;
+            margin-right: 120px;
+            margin-top:150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">ELECTRON</div>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="navLink" href="#">Audio</a></li>
+                    <li><a class="navLink" href="#">Computing</a></li>
+                    <li><a class="navLink" href="#">Living</a></li>
+                    <li><a class="navLink" href="#">Collections</a></li>
+                </ul>
+            </nav>
+
+            <div class="right-section">
+                <img src="bag.png" class="icon">
+                <img src="user.png" class="icon">
+            </div>
+        </div>
+    </header>
+
+    <section class="Hero-section">
+        <div class="hero-components">
+            <h1 class="hero-text">Acoustic <br> Architecture.</h1>
+        <p class="hero-para">Precision engineering meeting the quiet aesthetics of the modern interior. Designed to be
+            felbt, not just heard.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-explore">Explore Gallery</button>
+            <button class="btn btn-monolith">The Monolith Series</button>
+        </div>
+        </div>
+        
+    </section>
+</body>
+
+</html>
