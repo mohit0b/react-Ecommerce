@@ -1,7 +1,7 @@
-[
+ export const products = [
   {
     "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    "image": "images/products/Aether-headphones.png",
+    "image": "/products/Aether-headphones.png",
     "name": "Aether Headphones - Studio-Grade Acoustic Over-Ears",
     "rating": {
       "stars": 4.5,
@@ -12,7 +12,7 @@
   },
   {
     "id": "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-    "image": "images/products/air-purifier.png",
+    "image": "/products/air-purifier.png",
     "name": "Atmosphere Air Purifier - HEPA-Carbon Filtration Column",
     "rating": {
       "stars": 4,
@@ -23,7 +23,7 @@
   },
   {
     "id": "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-    "image": "images/products/apex-laptopStand.png",
+    "image": "/products/apex-laptopStand.png",
     "name": "Apex Laptop Stand - Single-Sheet Folded Aluminum Riser",
     "rating": {
       "stars": 4.5,
@@ -34,7 +34,7 @@
   },
   {
     "id": "54e0eccd-8f36-462b-b68a-8182611d9add",
-    "image": "images/products/Axiom-MacroPad.png",
+    "image": "/products/Axiom-MacroPad.png",
     "name": "Axiom Macro Pad - 12-Key Tactical Control Deck",
     "rating": {
       "stars": 5,
@@ -45,7 +45,7 @@
   },
   {
     "id": "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-    "image": "images/products/desktop-mic.png",
+    "image": "/products/desktop-mic.png",
     "name": "High Quality DeskTop Mic With Superior build quality",
     "rating": {
       "stars": 4,
@@ -56,7 +56,7 @@
   },
   {
     "id": "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
-    "image": "images/products/flux-ambient-lamp.png",
+    "image": "/products/flux-ambient-lamp.png",
     "name": "Flux Ambient Lamp - Soft Diffusion Geometric Light",
     "rating": {
       "stars": 4.5,
@@ -67,7 +67,7 @@
   },
   {
     "id": "dd82ca78-a18b-4e2a-9250-31e67412f98d",
-    "image": "images/products/hifi-audio.png",
+    "image": "/products/hifi-audio.png",
     "name": "HiFi Headphones - Excellent Sound Quality",
     "rating": {
       "stars": 4.5,
@@ -78,7 +78,7 @@
   },
   {
     "id": "77919bbe-0e56-475b-adde-4f24dfed3a04",
-    "image": "images/products/horizon-desklight.png",
+    "image": "/products/horizon-desklight.png",
     "name": "Horizon Desk Light - Architectural Linear Task Beam",
     "rating": {
       "stars": 4.5,
@@ -89,7 +89,7 @@
   },
   {
     "id": "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
-    "image": "images/products/Ion-MechanicalDeck-keyboard.png",
+    "image": "/products/Ion-MechanicalDeck-Keyboard.png",
     "name": "Ion Mechanical Deck - Anodized Aluminum Keyboard",
     "rating": {
       "stars": 4,
@@ -100,7 +100,7 @@
   },
   {
     "id": "5968897c-4d27-4872-89f6-5bcb052746d7",
-    "image": "images/products/isotopoe-USB-C.png",
+    "image": "/products/Isotope-USB-C.png",
     "name": "Isotope USB-C Hub - 10-Port Aerospace Grade Dock",
     "rating": {
       "stars": 4.5,
@@ -109,20 +109,10 @@
     "priceCents": 2970,
     "keywords": ["usb-hub", "connectivity", "computing"]
   },
-  {
-    "id": "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
-    "image": "images/products/women-sandal-heels-white-pink.jpg",
-    "name": "Women's Sandal Heels - Pink",
-    "rating": {
-      "stars": 4.5,
-      "count": 2286
-    },
-    "priceCents": 5300,
-    "keywords": ["womens", "shoes", "heels", "sandals"]
-  },
+
   {
     "id": "aad29d11-ea98-41ee-9285-b916638cac4a",
-    "image": "images/products/leather-deskmat.png",
+    "image": "/products/leather-deskmat.png",
     "name": "Vector Desk Mat - Weighted Charcoal Felt & Leather",
     "rating": {
       "stars": 4.5,
@@ -133,7 +123,7 @@
   },
   {
     "id": "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
-    "image": "images/products/lithos-trackpad.png",
+    "image": "/products/lithos-trackpad.png",
     "name": "Lithos Trackpad - Machined Glass Input Surface",
     "rating": {
       "stars": 4.5,
@@ -144,7 +134,7 @@
   },
   {
     "id": "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
-    "image": "images/products/monolith-keyboard.png",
+    "image": "/products/monolith-keyboard.png",
     "name": "Monolith-KeyBoard - A handwired keyboard with full backlight and approximately 1600 solder joints.",
     "rating": {
       "stars": 4,
@@ -155,7 +145,7 @@
   },
   {
     "id": "c2a82c5e-aff4-435f-9975-517cfaba2ece",
-    "image": "images/products/obsidian.png",
+    "image": "/products/obsidian.png",
     "name": "Obsidian Soundbar - 3D Spatial Audio System",
     "rating": {
       "stars": 5,
@@ -166,7 +156,7 @@
   },
   {
     "id": "58b4fc92-e98c-42aa-8c55-b6b79996769a",
-    "image": "images/products/orbital-smart.png",
+    "image": "/products/orbital-smart.png",
     "name": "Orbital Smart Hub - Interactive Circular Command Center",
     "rating": {
       "stars": 4,
@@ -177,7 +167,7 @@
   },
   {
     "id": "a82c6bac-3067-4e68-a5ba-d827ac0be010",
-    "image": "images/products/Prism-GPUBracket.png",
+    "image": "/products/Prism-GPUBracket.png",
     "name": "Prism GPU Bracket - Steel Geometric Support Frame",
     "rating": {
       "stars": 4,
@@ -188,7 +178,7 @@
   },
   {
     "id": "1c079479-8586-494f-ab53-219325432536",
-    "image": "images/products/pulse-earbuds.png",
+    "image": "/products/pulse-earbuds.png",
     "name": "Pulse Earbuds - Matte Titanium Wireless Audio",
     "rating": {
       "stars": 4,
@@ -199,7 +189,7 @@
   },
   {
     "id": "b0f17cc5-8b40-4ca5-9142-b61fe3d98c85",
-    "image": "images/products/quantum-ssd-enclosure.png",
+    "image": "/products/quantum-ssd-enclosure.png",
     "name": "Quantum SSD Enclosure - High-Speed Thermal Sinks",
     "rating": {
       "stars": 4.5,
@@ -210,7 +200,7 @@
   },
   {
     "id": "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
-    "image": "images/products/thermostat.png",
+    "image": "/products/thermostat.png",
     "name": "PMW - Thermostat 130°C Temperature Thermal Switch ",
     "rating": {
       "stars": 4.5,
@@ -221,7 +211,7 @@
   },
   {
     "id": "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
-    "image": "images/products/vanta-display.png",
+    "image": "/products/Vanta-display.png",
     "name": "Vanta Zero Display - 32\" Bezel-less 8K Monitor",
     "rating": {
       "stars": 4,
@@ -232,7 +222,7 @@
   },
   {
     "id": "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
-    "image": "images/products/vertical-mouse.png",
+    "image": "/products/Vertical-Mouse.png",
     "name": "Symmetry Vertical Mouse - Ergonomic Obsidian Finish",
     "rating": {
       "stars": 4.5,
@@ -243,7 +233,7 @@
   },
   {
     "id": "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
-    "image": "images/products/white-clickbot.png",
+    "image": "/products/white-clickbot.png",
     "name": "Advanced Intelligent white Clickbot",
     "rating": {
       "stars": 4.5,
@@ -254,7 +244,7 @@
   },
   {
     "id": "e4f64a65-1377-42bc-89a5-e572d19252e2",
-    "image": "images/products/wireless-charger.png",
+    "image": "/products/wireless-charger.png",
     "name": "Kinetics Wireless Charger - Stone-Weighted Magnetic Dock",
     "rating": {
       "stars": 4.5,
@@ -264,3 +254,10 @@
     "keywords": ["charger", "wireless", "living"]
   }
 ]
+export default products
+
+console.log(
+  products.some(product =>
+    product.keywords.includes("keyboard")
+  )
+);

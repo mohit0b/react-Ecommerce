@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Inter:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.featured-section {
+    width: 100%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+}
+
+.featured-collections {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-rows: 450px 450px;
+    gap: 24px;
+}
+
+.category {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #e8e8ed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+}
+
+.category:hover {
+    transform: scale(1.02);
+}
+
+.category-1 {
+    grid-row: 1 / span 2;
+    background-image: url('../assets/images/men-stretch-wool-sweater-black.jpg');
+}
+
+.category-2 {
+    grid-row: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/electric-steel-hot-water-kettle-white.jpg');
+}
+
+.category-3 {
+    grid-row: 2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hifi-audio.png');
+}
+
+.category span {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.category h1 {
+    margin: 0;
+    font-size: 32px;
+    color:white;
+}
+
+/* --- New Arrivals --- */
+
+        .new-arrivals {
+            background-color: rgb(242 244 246);
+            padding: 128px 0;
+            /* 8rem */
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .arrival-wrapper {
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .arrival-header {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 60px;
+        }
+
+        .latest {
+            color: #8b1a00;
+            letter-spacing: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .arrival-heading {
+            font-size: 60px;
+            letter-spacing: -3px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            margin: 0;
+            color: #000;
+        }
+
+        .arrival-para {
+            max-width: 380px;
+            color: #43474d;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 8px;
+        }
+
+        .products-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-left: 120px;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            scrollbar-width: none;
+        }
+
+        .feature-card {
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            background: transparent;
+        }
+
+        .feature-image-box {
+            width: 100%;
+            height: 435px;
+            aspect-ratio: 1.6;
+            /* 16 / 10 */
+            background-color: #e8e8ed;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .feature-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .feature-image-box img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .feature-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-name {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .special-feature {
+            color: rgb(67 71 77);
+            letter-spacing: 0.35px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 4px;
+        }
+
+        .price {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+/* --- Narrative Section --- */
+.narrative-section {
+    padding: 120px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.narrative-flex {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.narrative-img-side {
+    width: 50%;
+    position: relative;
+}
+
+.narrative-text-side {
+    width: 50%;
+}
+
+.narrative-img-container {
+    aspect-ratio: 0.75;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 21, 42, 0.1);
+}
+
+.narrative-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.narrative-badge {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0 21 42);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.narrative-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Manrope', sans-serif;
+    ;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+    color: #00152a;
+    text-decoration: none;
+    transition: gap 0.3s ease;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.learn-more:hover {
+    gap: 1.5rem;
+}
+
+/* --- Experience & Footer --- */
+.experience-section {
+    padding: 96px 40px;
+    background-color: rgb(0 21 42);
+    color: white;
+    text-align: center;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.location-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 80px;
+    }
+
+    .hero-components {
+        margin: 0 40px;
+    }
+
+    .products-cards {
+        margin-left: 40px;
+    }
+
+    .narrative-title {
+        font-size: 56px;
+    }
+}
+
+/* Tablets (Portrait) */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .hero-text {
+        font-size: 60px;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .category-1 {
+        grid-row: auto;
+        height: 450px;
+    }
+
+    .arrival-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .arrival-heading {
+        font-size: 40px;
+    }
+
+    .products-cards {
+        margin-left: 0;
+    }
+
+    .narrative-flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .narrative-img-side,
+    .narrative-text-side {
+        width: 100%;
+    }
+
+    .narrative-badge {
+        display: none;
+    }
+
+    /* Hide badge on mobile to avoid overlap */
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .nav-list {
+        display: none;
+    }
+
+    /* Better to use a burger menu here, but hiding for now */
+
+    .hero-text {
+        font-size: 44px;
+    }
+
+    .hero-para {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 16px 24px;
+        font-size: 12px;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .featured-section {
+        padding: 60px 20px;
+    }
+
+    .arrival-heading {
+        font-size: 32px;
+    }
+
+    .locations {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location-item {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .narrative-title {
+        font-size: 36px;
+    }
+
+    .narrative-section {
+        padding: 60px 20px;
+    }
+}

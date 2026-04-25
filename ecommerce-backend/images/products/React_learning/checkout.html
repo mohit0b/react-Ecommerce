@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Checkout | Aether Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+    /* Colors from your Tailwind Config */
+    --primary: #00152a;
+    --background: #f7f9fb;
+    --on-background: #191c1e;
+    --on-surface-variant: #43474d;
+    --outline-variant: #c3c6ce;
+    --surface-container-lowest: #ffffff;
+    --surface-container-high: #e6e8ea;
+    --on-primary: #ffffff;
+    --primary-container: #102a43;
+    
+    /* Spacing & Misc */
+    --container-max: 1440px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--on-background);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+/* --- Header --- */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: rgba(248, 250, 252, 0.8);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    color: #0f172a;
+}
+
+.nav-links {
+    display: none;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .nav-links { display: flex; }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: -0.02em;
+    transition: var(--transition);
+}
+
+.nav-links a:hover { color: #0f172a; }
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: var(--primary);
+    color: white;
+    font-size: 8px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* --- Layout --- */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 4rem 3rem;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+}
+
+@media (min-width: 1024px) {
+    .checkout-grid { grid-template-columns: repeat(12, 1fr); }
+    .checkout-main { grid-column: span 7; }
+    .checkout-sidebar { grid-column: span 5; }
+}
+
+/* --- Left Column Content --- */
+.page-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--primary);
+    margin-bottom: 4rem;
+}
+
+.checkout-section {
+    margin-bottom: 5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.step-number {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.section-header h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .form-grid { grid-template-columns: repeat(2, 1fr); }
+    .form-grid .full-width { grid-column: span 2; }
+    .form-grid .span-2 { grid-column: span 2; }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--on-surface-variant);
+}
+
+.checkout-input {
+   width: 100%; /* Add this to ensure underlines span the full column width */
+    border: 0;
+    border-bottom: 1px solid var(--outline-variant);
+    background: transparent;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    font-family: 'Manrope', sans-serif;
+    transition: var(--transition);
+    border-radius: 0;
+}
+
+.checkout-input:focus {
+    outline: none;
+    border-bottom-color: var(--primary);
+}
+
+.card-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.card-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-type-1 { width: 32px; height: 20px; background: #e2e8f0; border-radius: 2px; }
+.card-type-2 { width: 32px; height: 20px; background: #cbd5e1; border-radius: 2px; }
+
+/* --- Sidebar --- */
+.sticky-summary {
+    position: sticky;
+    top: 120px;
+    background-color: var(--surface-container-lowest);
+    padding: 3rem;
+    border: 1px solid rgba(195, 198, 206, 0.1);
+}
+
+.summary-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--on-surface-variant);
+    margin-bottom: 3rem;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.summary-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.item-img {
+    width: 6rem;
+    height: 8rem;
+    background-color: var(--surface-container-high);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+
+.item-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--primary);
+}
+
+.item-desc {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--on-surface-variant);
+    margin-top: 0.25rem;
+}
+
+.item-price {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.summary-breakdown {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(195, 198, 206, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.breakdown-row span:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--on-surface-variant);
+}
+
+.breakdown-row .val {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.summary-total {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.total-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.total-val-box {
+    text-align: right;
+}
+
+.est-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--on-surface-variant);
+    margin-bottom: 0.25rem;
+}
+
+.total-price {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    color: var(--primary);
+}
+
+.purchase-btn {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    padding: 1.5rem;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.purchase-btn:hover { background-color: var(--primary-container); }
+.purchase-btn:active { transform: scale(0.98); }
+
+.legal-text {
+    font-size: 9px;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--on-surface-variant);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
+.legal-text a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #f1f5f9;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer { flex-direction: row; justify-content: space-between; }
+}
+
+.footer-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.footer-links a {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.footer-links a:hover { color: #1e293b; }
+
+.copyright {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+}
+/* Update your form-grid specifically for the payment section if needed */
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for mobile */
+    gap: 2.5rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .payment-grid {
+        grid-template-columns: 2fr 1fr 1fr; /* Card (large), Expiry, CVV */
+    }
+    
+    .full-width-mobile {
+        grid-column: span 3; /* Card Number spans all 3 columns */
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Aether</div>
+        <nav class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">Collections</a>
+            <a href="#">Journal</a>
+            <a href="#">About</a>
+        </nav>
+        <div class="header-actions">
+            <button class="material-symbols-outlined">person</button>
+            <button class="material-symbols-outlined cart-icon">
+                shopping_bag
+                <span class="cart-badge">2</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="checkout-grid">
+            <div class="checkout-main">
+                <h1 class="page-title">Checkout</h1>
+                
+                <section class="checkout-section">
+                    <div class="section-header">
+                        <span class="step-number">01</span>
+                        <h2>Shipping Address</h2>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label>Full Name</label>
+                            <input class="checkout-input" placeholder="Johnathan Doe" type="text"/>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Address</label>
+                            <input class="checkout-input" placeholder="1280 Lexington Avenue" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <input class="checkout-input" placeholder="New York" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Zip Code</label>
+                            <input class="checkout-input" placeholder="10028" type="text"/>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Email Address</label>
+                            <input class="checkout-input" placeholder="j.doe@aether.com" type="email"/>
+                        </div>
+                    </div>
+                </section>
+
+               <section class="checkout-section">
+    <div class="section-header">
+        <span class="step-number">02</span>
+        <h2>Payment Details</h2>
+    </div>
+    <div class="form-grid payment-grid">
+        <div class="form-group full-width-mobile">
+            <label>Card Number</label>
+            <div class="card-input-wrapper">
+                <input class="checkout-input" placeholder="0000 0000 0000 0000" type="text"/>
+                <div class="card-icons">
+                    <span class="card-type-1"></span>
+                    <span class="card-type-2"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Expiry Date</label>
+            <input class="checkout-input" placeholder="MM / YY" type="text"/>
+        </div>
+        <div class="form-group">
+            <label>CVV</label>
+            <input class="checkout-input" placeholder="***" type="text"/>
+        </div>
+    </div>
+</section>
+            </div>
+
+            <div class="checkout-sidebar">
+                <div class="sticky-summary">
+                    <h3 class="summary-title">Order Summary</h3>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <div class="item-img">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF68DJn0BfZYIc6hqzHo8wTdCZhd5wg8YfRou4423Sl0_rhaL9ubR8CZv_RZNvO8NBhXKowO08kcLm1m5H8DhPSYuUzHwHdDYNosLUaNX3e4lbu8HjXcZNAatL6SjgrDPhkT92xPKebFLwtOOD_wOHMM-dgxX_e7hORid8NzzYqDBFbW_czxKHJ1QsSAG-ohmAoouBW8qEihK5NSn5_cQUl2uOxQkBOMGmz3Krno6FF8Su5Aa72kw1Fvp7C_3o752Ep6nsuenShvQ" alt="Keyboard"/>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <p class="item-name">Monolith Keyboard</p>
+                                    <p class="item-desc">Obsidian Black / tactile</p>
+                                </div>
+                                <p class="item-price">$850.00</p>
+                            </div>
+                        </div>
+
+                        <div class="summary-item">
+                            <div class="item-img">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6HNNfDX90Vzx8VJQGu6bJo6m-LQlssZWdrUeP87IEUxBxodGS9Ml_1BlgPN-ogYIKBUe5u9k7WdyWFQpGQzjHolinghS4ASIdcZMJmdcpSQhOkunRRa-kQIdX_Q52z8iTI-CFDnV3XoKJSyTTeHVw3hjjbb6gYgPeNBquxmEyR74_jvGb2X5ZxhbinvHzm-TYiZ3J06dQyjY_lWKmPuAoulkYmLaqLr3_WGxbiSPqqIaE8x4O0-O0SaSToMvqhZbOCkEYVRTaCp8" alt="Headphones"/>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <p class="item-name">Aether Headphones</p>
+                                    <p class="item-desc">Titanium / Noise-Cancel</p>
+                                </div>
+                                <p class="item-price">$590.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-breakdown">
+                        <div class="breakdown-row">
+                            <span>Subtotal</span>
+                            <span class="val">$1,440.00</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Shipping</span>
+                            <span class="val">$45.00</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span>Taxes</span>
+                            <span class="val">$122.40</span>
+                        </div>
+                    </div>
+
+                    <div class="summary-total">
+                        <span class="total-label">Total</span>
+                        <div class="total-val-box">
+                            <span class="est-label">Estimated Total</span>
+                            <span class="total-price">$1,607.40</span>
+                        </div>
+                    </div>
+
+                    <button class="purchase-btn">COMPLETE PURCHASE</button>
+                    <p class="legal-text">
+                        By completing this purchase, you agree to our <a href="#">Terms of Service</a> and <a href="#">Returns Policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">Aether</div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+        </div>
+        <p class="copyright">© 2024 Aether Commerce. The Architectural Gallery.</p>
+    </footer>
+</body>
+</html>

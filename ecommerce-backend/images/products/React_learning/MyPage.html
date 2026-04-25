@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architectural Gallery</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body class="bg-surface text-on-surface">
+
+  <script>
+    const code = "122639"
+    fetch(`https://mfdata.in/api/v1/schemes`)
+      .then(response => response.json())
+      .then(data => console.log(data))
+  </script>
+</body>
+
+</html>
+
+/**
+{
+"id": "19c6a64a-5463-4d45-9af8-e41140a4100c",
+"image": "images/products/duvet-cover-set-gray-queen.jpg",
+"name": "Duvet Cover Set, Diamond Pattern",
+"rating": {
+"stars": 4,
+"count": 456
+},
+"priceCents": 4399,
+"keywords": ["bedroom", "bed sheets", "sheets", "covers", "home"]
+},
+{
+"id": "d2785924-743d-49b3-8f03-ec258e640503",
+"image": "images/products/women-knit-beanie-pom-pom-blue.jpg",
+"name": "Women's Knit Winter Beanie - Blue",
+"rating": {
+"stars": 5,
+"count": 83
+},
+"priceCents": 1950,
+"keywords": ["hats", "winter hats", "beanies", "apparel", "womens"]
+},
+{
+"id": "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
+"image": "images/products/men-chino-pants-beige.jpg",
+"name": "Men's Chino Pants - Beige",
+"rating": {
+"stars": 4.5,
+"count": 9017
+},
+"priceCents": 2290,
+"keywords": ["pants", "apparel", "mens"]
+},
+{
+"id": "4df68c27-fd59-4a6a-bbd1-e754ddb6d53c",
+"image": "images/products/men-navigator-sunglasses-black.jpg",
+"name": "Men's Navigator Sunglasses",
+"rating": {
+"stars": 3.5,
+"count": 42
+},
+"priceCents": 3690,
+"keywords": ["sunglasses", "glasses", "accessories", "shades"]
+},
+{
+"id": "04701903-bc79-49c6-bc11-1af7e3651358",
+"image": "images/products/men-brown-flat-sneakers.jpg",
+"name": "Men's Brown Flat Sneakers",
+"rating": {
+"stars": 4.5,
+"count": 562
+},
+"priceCents": 2499,
+"keywords": ["footwear", "men", "sneakers"]
+},
+{
+"id": "4e37dd03-3b23-4bc6-9ff8-44e112a92c64",
+"image": "images/products/non-stick-cooking-set-4-pieces.jpg",
+"name": "Non-Stick Cook Set With Lids - 4 Pieces",
+"rating": {
+"stars": 4.5,
+"count": 511
+},
+"priceCents": 6797,
+"keywords": ["cooking set", "kitchen"]
+},
+{
+"id": "a434b69f-1bc1-482d-9ce7-cd7f4a66ce8d",
+"image": "images/products/vanity-mirror-pink.jpg",
+"name": "Vanity Mirror with LED Lights - Pink",
+"rating": {
+"stars": 4.5,
+"count": 130
+},
+"priceCents": 2549,
+"keywords": ["bathroom", "washroom", "mirrors", "home"]
+},
+{
+"id": "a45cfa0a-66d6-4dc7-9475-e2b01595f7d7",
+"image": "images/products/women-relaxed-lounge-pants-pink.jpg",
+"name": "Women's Relaxed Lounge Pants - Pink",
+"rating": {
+"stars": 4.5,
+"count": 248
+},
+"priceCents": 3400,
+"keywords": ["pants", "apparel", "womens"]
+},
+{
+"id": "d339adf3-e004-4c20-a120-40e8874c66cb",
+"image": "images/products/crystal-zirconia-stud-earrings-pink.jpg",
+"name": "Crystal Zirconia Stud Earrings - Pink",
+"rating": {
+"stars": 4.5,
+"count": 117
+},
+"priceCents": 3467,
+"keywords": ["accessories", "womens"]
+},
+{
+"id": "d37a651a-d501-483b-aae6-a9659b0757a0",
+"image": "images/products/glass-screw-lid-food-containers.jpg",
+"name": "Glass Screw Lid Containers - 3 Pieces",
+"rating": {
+"stars": 4,
+"count": 126
+},
+"priceCents": 2899,
+"keywords": ["food containers", "kitchen"]
+},
+{
+"id": "0d7f9afa-2efe-4fd9-b0fd-ba5663e0a524",
+"image": "images/products/black-and-silver-espresso-maker.jpg",
+"name": "Black and Silver Espresso Maker",
+"rating": {
+"stars": 4.5,
+"count": 1211
+},
+"priceCents": 8250,
+"keywords": ["espresso makers", "kitchen", "appliances"]
+},
+{
+"id": "02e3a47e-dd68-467e-9f71-8bf6f723fdae",
+"image": "images/products/blackout-curtains-set-teal.jpg",
+"name": "Blackout Curtains Set 42 x 84-Inch - Teal",
+"rating": {
+"stars": 4.5,
+"count": 363
+},
+"priceCents": 3099,
+"keywords": ["bedroom", "home", "curtains"]
+},
+{
+"id": "8a53b080-6d40-4a65-ab26-b24ecf700bce",
+"image": "images/products/bath-towel-set-gray-rosewood.jpg",
+"name": "Bath Towels 2 Pack - Gray, Rosewood",
+"rating": {
+"stars": 4.5,
+"count": 93
+},
+"priceCents": 2990,
+"keywords": ["bathroom", "home", "towels"]
+},
+{
+"id": "10ed8504-57db-433c-b0a3-fc71a35c88a1",
+"image": "images/products/athletic-skateboard-shoes-gray.jpg",
+"name": "Athletic Skateboard Shoes - Gray",
+"rating": {
+"stars": 4,
+"count": 89
+},
+"priceCents": 3390,
+"keywords": ["shoes", "running shoes", "footwear"]
+},
+{
+"id": "77a845b1-16ed-4eac-bdf9-5b591882113d",
+"image": "images/products/countertop-push-blender-black.jpg",
+"name": "Countertop Push Blender - Black",
+"rating": {
+"stars": 4,
+"count": 3
+},
+"priceCents": 10747,
+"keywords": ["food blenders", "kitchen", "appliances"]
+},
+{
+"id": "bc2847e9-5323-403f-b7cf-57fde044a955",
+"image": "images/products/men-cozy-fleece-hoodie-light-teal.jpg",
+"name": "Men's Fleece Hoodie - Light Teal",
+"rating": {
+"stars": 4.5,
+"count": 3157
+},
+"priceCents": 3800,
+"keywords": ["sweaters", "hoodies", "apparel", "mens"]
+},
+{
+"id": "36c64692-677f-4f58-b5ec-0dc2cf109e27",
+"image": "images/products/artistic-bowl-set-6-piece.jpg",
+"name": "Artistic Bowl and Plate Set - 6 Pieces",
+"rating": {
+"stars": 5,
+"count": 679
+},
+"priceCents": 3899,
+"keywords": ["bowls set", "kitchen"]
+},
+{
+"id": "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
+"image": "images/products/kitchen-paper-towels-8-pack.jpg",
+"name": "2-Ply Kitchen Paper Towels - 8 Pack",
+"rating": {
+"stars": 4.5,
+"count": 1045
+},
+"priceCents": 1899,
+"keywords": ["kitchen", "kitchen towels", "tissues"]
+}
+**/

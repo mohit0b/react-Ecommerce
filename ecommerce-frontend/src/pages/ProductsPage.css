@@ -1,0 +1,435 @@
+
+  
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  /* ── MAIN ── */
+  main {
+    max-width: 1120px;
+    margin: auto auto;
+    padding: 128px 32px 80px;
+  }
+
+  /* ── HERO ── */
+  header {
+    margin-bottom: 80px;
+    
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-weight: 500;
+    color: #314863;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    color: #00152a;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: #43474d;
+    font-weight: 500;
+    max-width: 280px;
+    line-height: 1.55;
+  }
+
+  /* ── FILTERS ── */
+  .filters {
+    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .filter-pills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .pill.active {
+    background: #00152a;
+    color: #ffffff;
+  }
+  .changed{
+    background: #00152a;
+    color: #ffffff;
+  }
+
+  .pill:not(.active) {
+    background: #e6e8ea;
+    color: #43474d;
+  }
+
+  .pill:not(.active):hover {
+    background: #e0e3e5;
+  }
+
+  .filter-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+  }
+
+  .price-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .price-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #43474d;
+  }
+
+  .price-divider {
+    height: 1px;
+    width: 48px;
+    background: #c3c6ce;
+  }
+
+  .price-range {
+    font-size: 13px;
+    font-weight: 500;
+    color: #00152a;
+  }
+
+  .sort-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .sort-arrow {
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+
+  /* ── PRODUCT GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 48px;
+    row-gap: 64px;
+  }
+
+  .col-8 { grid-column: span 8; }
+  .col-4 { grid-column: span 4; }
+
+  article {
+    cursor: pointer;
+  }
+
+  .img-wrap {
+    overflow: hidden;
+    background: #f2f4f6;
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease-out;
+  }
+
+  article:hover .img-wrap img {
+    transform: scale(1.05);
+  }
+
+  .img-16-10 {
+    aspect-ratio: 16 / 10;
+  }
+
+  .img-4-5 {
+    aspect-ratio: 4 / 5;
+  }
+
+  .badge {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: #ffdad2;
+    color: #8b1a00;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+  }
+
+  .product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product-name {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #00152a;
+    margin-bottom: 4px;
+  }
+
+  .product-name-sm {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #00152a;
+    margin-bottom: 4px;
+  }
+
+  .product-desc-italic {
+    font-size: 13px;
+    color: #43474d;
+    font-style: italic;
+    max-width: 360px;
+  }
+
+  .product-desc {
+    font-size: 13px;
+    color: #43474d;
+    margin-bottom: 12px;
+  }
+
+  .product-price-lg {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .product-price {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background: white; /* Ensures label background matches */
+}
+
+/* The Fixed Label Text */
+.qty-label {
+    position: absolute;
+    left: 1rem;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #74777e; /* Muted slate */
+    pointer-events: none; /* User clicks through to the select */
+    z-index: 1;
+}
+
+.qty-select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--outline-variant);
+    border-radius: 0;
+    /* Extra left padding (approx 5.5rem) to make room for "Quantity:" */
+    padding: 0.75rem 2.5rem 0.75rem 5.5rem; 
+    font-family: var(--font-headline);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.qty-select:hover {
+    border-color: var(--primary);
+}
+
+.select-icon {
+    position: absolute;
+    right: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--primary);
+    pointer-events: none;
+    z-index: 3;
+}
+.add-to-cart-btn {
+    position: relative;
+    width:100%;
+    margin-top:10px;
+    background-color: var(--primary); /* #00152a */
+    color: var(--on-primary); /* #ffffff */
+    border: none;
+    padding: 0 1.5rem;
+    height: 48px; /* Fixed height to match the select box exactly */
+    font-family: var(--font-headline);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25em; /* Extreme tracking for architectural look */
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Subtle Hover Effect */
+.add-to-cart-btn:hover {
+    background-color: #102a43; /* Tonal shift from your tailwind config */
+}
+
+/* Active/Press State */
+.add-to-cart-btn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+  
+  .col-4-flex {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .col-4-flex .img-wrap {
+    flex-shrink: 0;
+  }
+
+  .col-4-flex .product-info {
+    margin-top: auto;
+  }
+
+  /* ── LOAD MORE ── */
+  .load-more {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .load-btn {
+    padding: 20px 48px;
+    background: #00152a;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .load-btn:hover {
+    background: #102a43;
+  }
+
+  .load-count {
+    font-size: 11px;
+    color: #43474d;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+.sort-control {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--outline-variant);
+    border-radius: 0;
+    /* Extra left padding (approx 5.5rem) to make room for "Quantity:" */
+    padding: 0.75rem 0rem 0.75rem 2.5rem; 
+    font-family: var(--font-headline);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    width: 60%;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease;
+    margin: 0;
+}
+
+.sort-control:hover {
+    border-color: var(--primary);
+}
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.home-page .product-rating-count {
+  color: rgb(25, 135, 84);
+  cursor: auto;
+  margin-top: 3px;
+}
+.view-product-button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 8px;
+  background-color: black;
+  color:white;
+  border-radius: 5px;
+}
