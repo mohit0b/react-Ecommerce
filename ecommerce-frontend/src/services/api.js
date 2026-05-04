@@ -1,5 +1,8 @@
 import axios from 'axios';
 
+export const BASE_URL = 'https://neurocart-backend.onrender.com';
+axios.defaults.baseURL = BASE_URL;
+
 // Simulate network delay for non-backend methods if needed
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -9,7 +12,7 @@ export const api = {
     // The backend uses priceCents, but our UI uses price (dollars). Let's map it.
     return response.data.map(p => ({
       ...p,
-      image: '/' + p.image,
+      image: `${BASE_URL}/${p.image}`,
       price: p.priceCents ? p.priceCents / 100 : p.price,
       // Map properties if needed to match frontend expectations
       category: p.keywords && p.keywords.length > 0 ? p.keywords[0] : 'General',
@@ -35,7 +38,7 @@ export const api = {
     const response = await axios.get(url);
     let results = response.data.map(p => ({
       ...p,
-      image: '/' + p.image,
+      image: `${BASE_URL}/${p.image}`,
       price: p.priceCents ? p.priceCents / 100 : p.price,
       category: p.keywords && p.keywords.length > 0 ? p.keywords[0].charAt(0).toUpperCase() + p.keywords[0].slice(1) : 'General',
       rating: p.rating ? p.rating.stars : 4.0,

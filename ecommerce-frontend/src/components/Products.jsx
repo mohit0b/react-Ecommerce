@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { BASE_URL } from "../services/api";
 export function Products({product,loadCart}) {
   
 
@@ -27,7 +28,7 @@ export function Products({product,loadCart}) {
         <article className="col-4-flex">
           
           <div className="img-wrap img-4-5">
-            <img src={product.image} alt={product.name} />
+            <img src={`${BASE_URL}/${product.image}`} alt={product.name} />
           </div>
 
           <div className="product-info">
@@ -36,7 +37,7 @@ export function Products({product,loadCart}) {
             <div className="product-rating-container">
                 <img
                     className="product-rating-stars"
-                    src={`images/ratings/rating-${product.rating.stars * 10}.png`}
+                    src={`${BASE_URL}/images/ratings/rating-${product.rating.stars * 10}.png`}
                 />
                 <div className="product-rating-count link-primary">
                     {product.rating.count}

@@ -1,4 +1,4 @@
-import axios from "axios";
+import { api } from "../services/api";
 import "./ProductsPage.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -14,8 +14,8 @@ export function ProductsPage({ loadCart }) {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await axios.get("/api/products");
-        setProducts(response.data);
+        const results = await api.getProducts();
+        setProducts(results);
       } catch (err) {
         console.error(err);
       }

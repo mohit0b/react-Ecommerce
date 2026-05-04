@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import dayjs from 'dayjs'
 import './ordersPage.css'
-import axios from "axios";
 import { Fragment } from "react";
+import { BASE_URL } from "../services/api";
 
 export function OrdersPage() {
   const [orders, setOrders] = useState([])
@@ -57,7 +57,7 @@ export function OrdersPage() {
                   {order.products.map((orderProduct) => {
                     return (
                       <Fragment key={orderProduct.product.id}>                                    <div className="product-image-container">
-                        <img src={orderProduct.product.image} />
+                        <img src={`${BASE_URL}/${orderProduct.product.image}`} />
                       </div>
 
                         <div className="product-details">

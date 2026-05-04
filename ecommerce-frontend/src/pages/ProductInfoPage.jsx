@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { ProductDetail } from "../components/ProductDetails";
-import axios from "axios";
+import { api } from "../services/api";
 import { Navbar } from "../components/Navbar";
 import { useEffect, useState } from "react";
 
@@ -12,11 +12,7 @@ export function ProductInfoPage({loadCart}) {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`/api/products`);
-        
-        // find product by id
-        const foundProduct = response.data.find(p => p.id === id);
-
+        const foundProduct = await api.getProductById(id);
         setProduct(foundProduct);
       } catch (err) {
         console.error(err);

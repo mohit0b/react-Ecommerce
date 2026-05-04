@@ -1,6 +1,7 @@
 import "./productDetails.css";
 import { useState } from "react";
 import { getProductDetails } from "../utils/getProductDetails";
+import { BASE_URL } from "../services/api";
 import axios from "axios";
 
 export function ProductDetail({ product ,loadCart}) {
@@ -31,7 +32,7 @@ export function ProductDetail({ product ,loadCart}) {
 
         {/* LEFT IMAGE */}
         <div className="product-left">
-          <img src={`/${product.image}`} alt={product.name} />
+          <img src={`${BASE_URL}/${product.image}`} alt={product.name} />
         </div>
 
         {/* RIGHT DETAILS */}
