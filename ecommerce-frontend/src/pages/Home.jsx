@@ -1,178 +1,99 @@
-import { Navbar } from '../components/Navbar'
-import { Hero } from '../components/Hero'
-import { Footer } from '../components/Footer'
-import Obsidian from '../assets/images/obsidian.png'
-import Monolith from '../assets/images/monolith-Keyboard.png'
-import OrbitalSmart from '../assets/images/orbital-smart.png'
-import VectraDesk from '../assets/images/vectra-deskLamp.png'
-import Window from '../assets/images/window.png'
-import './home.css'
-export function HomePage () {
-     return (
-        <>
-          <Navbar />
-          <Hero />
-          <>
-            <section className="featured-section">
-              <div className="featured-collections">
-                <div className="featured-grid">
-                  <div className="category-1 category">
-                    <span>Category</span>
-                    <h1>Fashion</h1>
-                    <p>Explore trendy apparel, footwear, and accessories.</p>
-                  </div>
-    
-                  <div className="category-2 category">
-                    <h2>Appliances</h2>
-                  </div>
-    
-                  <div className="category-3 category">
-                    <h2>Hi-Fi Audio</h2>
-                  </div>
-                </div>
-    
-              </div>
-            </section>
-    
-            <section className="new-arrivals">
-              <div className="arrival-wrapper">
-                <div className="arrival-header">
-                  <div className="arrival-column1">
-                    <span className="latest">THE LATEST</span>
-                    <h2 className="arrival-heading">New Arrivals</h2>
-                  </div>
-                  <div>
-                    <p className="arrival-para">Exhibiting the latest advancements in structural electronics and sensory
-                      design.</p>
-                  </div>
-    
-                </div>
-              </div>
-    
-    
-              <div className="products-cards">
-                <article className="feature-card">
-                  <div className="feature-image-box">
-                    <img src={Obsidian} alt="Product Display" />
-                  </div>
-    
-                  <div className="feature-info">
-                    <div className="product-info">
-                      <h4 className="product-name">The Obsidian Soundbar</h4>
-                      <p className="special-feature">Pure Resonance</p>
-                    </div>
-    
-                    <p className="price">&#8377;2,450</p>
-                  </div>
-                </article>
-    
-                <article className="feature-card">
-                  <div className="feature-image-box">
-                    <img src={Monolith} alt="Product Display" />
-                  </div>
-    
-                  <div className="feature-info">
-                    <div className="product-info">
-                      <h4 className="product-name">Monolith Keyboard</h4>
-                      <p className="special-feature">Tactile Precision</p>
-                    </div>
-    
-                    <p className="price">&#8377;850</p>
-                  </div>
-                </article>
-    
-                <article className="feature-card">
-                  <div className="feature-image-box">
-                    <img src={OrbitalSmart} alt="Product Display" />
-                  </div>
-    
-                  <div className="feature-info">
-                    <div className="product-info">
-                      <h4 className="product-name">Orbital Smart Hub</h4>
-                      <p className="special-feature">Unified Control</p>
-                    </div>
-    
-                    <p className="price">&#8377;1,100</p>
-                  </div>
-                </article>
-    
-                <article className="feature-card">
-                  <div className="feature-image-box">
-                    <img src={VectraDesk} alt="Product Display" />
-                  </div>
-    
-                  <div className="feature-info">
-                    <div className="product-info">
-                      <h4 className="product-name">Vectra Desk Lamp</h4>
-                      <p className="special-feature">Sculpted Light</p>
-                    </div>
-    
-                    <p className="price">&#8377;620</p>
-                  </div>
-                </article>
-    
-    
-              </div>
-            </section>
-    
-            <section className="narrative-section">
-              <div className="narrative-flex">
-                <div className="narrative-img-side">
-                  <div className="narrative-img-container">
-                    <img alt="Minimalist modern office interior"
-                      src={Window} />
-                    <div className="narrative-overlay"></div>
-                  </div>
-                  <div className="narrative-badge">
-                    Since Today: Simplifying the future of shopping.
-                  </div>
-                </div>
-                <div className="narrative-text-side">
-                  <span className="philosophy-tag">Our Philosophy</span>
-                  <h2 className="narrative-title">Built for Smarter Online Shopping.</h2>
-                  <div className="narrative-body">
-                    <p>
-                      At our platform, we focus on delivering a seamless and convenient shopping experience. We bring together a wide range of products across categories like electronics, fashion, home, and more—so you can find everything you need in one place.
-                    </p>
-                    <p>
-                      Our goal is to make online shopping easy, transparent, and dependable with clear product information, smooth navigation, and user-friendly design. This project is built to demonstrate a scalable and modern eCommerce interface using real-world design practices.
-                    </p>
-                  </div>
-                  <button className="learn-more">
-                    LEARN ABOUT OUR PROCESS <span className="material-symbols-outlined">arrow_forward</span>
-                  </button>
-                </div>
-              </div>
-            </section>
-            <section className="experience-section">
-  <div className="experience-container">
-    <h2 className="experience-title">Why Shop With Us</h2>
-    
-    <p className="experience-desc">
-      Designed to provide a smooth and reliable online shopping journey with easy navigation, fast checkout, and secure transactions.
-    </p>
+import { useEffect, useState } from 'react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ProductCard, ProductSkeleton } from '../components/ProductCard';
+import { getDynamicRecommendations } from '../utils/ai';
+import { useAppContext } from '../context/AppContext';
+import { api } from '../services/api';
 
-    <div className="locations">
-      <div className="location-item">
-        <p className="location-tag">Fast Delivery</p>
-        <p className="location-addr">Quick and reliable shipping options</p>
-      </div>
+export const Home = () => {
+  const { state } = useAppContext();
+  const [recommendations, setRecommendations] = useState([]);
+  const [trending, setTrending] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-      <div className="location-item">
-        <p className="location-tag">Secure Payments</p>
-        <p className="location-addr">Multiple safe and trusted payment methods</p>
-      </div>
-
-      <div className="location-item">
-        <p className="location-tag">Easy Returns</p>
-        <p className="location-addr">Hassle-free return and refund process</p>
-      </div>
-    </div>
-  </div>
-</section>
-          </>
-          <Footer />
-        </>
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const allProducts = await api.getProducts();
+        // Shuffle and take 4
+        const shuffled = [...allProducts].sort(() => 0.5 - Math.random());
+        setTrending(shuffled.slice(0, 4));
         
-      )
-}
+        // Dynamic Recommendations based on user actions
+        const recs = await getDynamicRecommendations(state.userActions, state.cart);
+        setRecommendations(recs);
+      } catch (e) {
+        console.error(e);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchData();
+  }, [state.userActions, state.cart]);
+
+  return (
+    <div className="w-full">
+      {/* Hero Section */}
+      <section className="relative px-6 py-20 lg:py-32 overflow-hidden bg-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50"></div>
+        <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-accent font-medium text-sm mb-6 border border-blue-100 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <Sparkles className="w-4 h-4" />
+            <span>AI-Powered Shopping Experience</span>
+          </div>
+          <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight text-primary mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700">
+            Future of Commerce is <br className="hidden md:block"/> 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">
+              Intelligent.
+            </span>
+          </h1>
+          <p className="text-lg lg:text-xl text-gray-500 max-w-2xl mb-10 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            Discover products curated specifically for you. Our AI analyzes your preferences to recommend exactly what you need.
+          </p>
+          <div className="flex gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
+            <Link to="/shop" className="bg-primary hover:bg-gray-800 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl flex items-center gap-2 group">
+              Shop Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Recommendations */}
+      <section className="py-20 px-6 max-w-7xl mx-auto">
+        <div className="flex items-end justify-between mb-10">
+          <div>
+            <h2 className="text-3xl font-bold flex items-center gap-2">
+              <Sparkles className="text-purple-500" /> Curated For You
+            </h2>
+            <p className="text-gray-500 mt-2">Based on your recent activity</p>
+          </div>
+          <Link to="/shop" className="text-accent font-medium hover:underline hidden sm:block">View All</Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {loading 
+            ? Array(4).fill(0).map((_, i) => <ProductSkeleton key={i} />)
+            : recommendations.length > 0 
+              ? recommendations.map(product => <ProductCard key={product.id} product={product} />)
+              : trending.map(product => <ProductCard key={product.id} product={product} />)
+          }
+        </div>
+      </section>
+
+      {/* Recently Viewed */}
+      {state.recentlyViewed.length > 0 && (
+        <section className="py-12 px-6 max-w-7xl mx-auto border-t border-gray-100">
+          <h2 className="text-2xl font-bold mb-8">Recently Viewed</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {state.recentlyViewed.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+};

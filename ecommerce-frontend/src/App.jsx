@@ -1,55 +1,40 @@
-import './App.css'
-import { HomePage } from './pages/Home'
-import { ProductsPage } from './pages/ProductsPage'
-import { Routes, Route } from 'react-router-dom'
-import { OrdersPage } from './pages/OrdersPage'
-import { CheckoutPage } from './pages/CheckoutPage'
-import { NotFoundPage } from './pages/NotFoundPage'
-import { AuthPage } from './pages/AuthPage'
-import { AccountPage } from './pages/AccountPage'
-import { useState,useEffect } from 'react'
-import axios from 'axios'
-import { TrackingPage } from './pages/TrackingPage'
-import {ProductInfoPage} from './pages/ProductInfoPage'
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Shop } from './pages/Shop';
+import { ProductDetail } from './pages/ProductDetail';
+import { Checkout } from './pages/Checkout';
+import { Login } from './pages/Login';
+import { Register } from './pages/Register';
+import { Navbar } from './components/Navbar';
+import { CartDrawer } from './components/CartDrawer';
+import { AIChatbot } from './components/AIChatbot';
+import { DebugPanel } from './components/DebugPanel';
+import { useAppContext } from './context/AppContext';
 
 function App() {
-  const [cart, setCart] = useState([]);
-    
-      const loadCart = async () => {
-        const response = await axios.get('/api/cart-items?expand=product')
-        setCart(response.data)
-  
-      }
-    useEffect(() => {
-  
-      loadCart();
-    }, [])
-    const [orders, setOrders] = useState([]);
-        
-          const loadOrders = async () => {
-            const response = await axios.get('/api/orders?expand=product')
-            setOrders(response.data)
-      
-          }
-        useEffect(() => {
-      
-          loadOrders();
-        }, [])
-    
+  const { state } = useAppContext();
 
   return (
-     <Routes>
-          <Route index element={<HomePage  />} />
-          <Route path="products" element={<ProductsPage loadCart={loadCart} />} />
-          <Route path="orders" element={<OrdersPage orders={orders}/>} />
-          <Route path="checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} loadOrders={loadOrders}/>} />
-          <Route path='tracking' element={<TrackingPage />}/>
-          <Route path="login" element={<AuthPage />} />
-          <Route path="account" element={<AccountPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-          <Route path="/product/:id" element={<ProductInfoPage loadCart={loadCart} />} />
+    <div className="min-h-screen bg-[#f5f5f7] text-gray-900 font-sans relative">
+      <Navbar />
+      
+      <main className="pt-20 pb-16">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<div className="p-20 text-center text-2xl font-bold">404 Not Found</div>} />
         </Routes>
-  )
+      </main>
+
+      <CartDrawer isOpen={state.isCartOpen} />
+      <AIChatbot />
+      <DebugPanel />
+    </div>
+  );
 }
 
-export default App
+export default App;

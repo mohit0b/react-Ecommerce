@@ -7,8 +7,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 87
     },
-    "priceCents": 1090,
-    "keywords": ["socks", "sports", "apparel"]
+    "priceCents": 87200,
+    "keywords": [
+      "socks",
+      "sports",
+      "apparel"
+    ]
   },
   {
     "id": "15b6fc6f-327a-4ec4-896f-486349e85a3d",
@@ -18,8 +22,11 @@ export const defaultProducts = [
       "stars": 4,
       "count": 127
     },
-    "priceCents": 2095,
-    "keywords": ["sports", "basketballs"]
+    "priceCents": 167600,
+    "keywords": [
+      "sports",
+      "basketballs"
+    ]
   },
   {
     "id": "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
@@ -29,8 +36,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 56
     },
-    "priceCents": 799,
-    "keywords": ["tshirts", "apparel", "mens"]
+    "priceCents": 63920,
+    "keywords": [
+      "tshirts",
+      "apparel",
+      "mens"
+    ]
   },
   {
     "id": "54e0eccd-8f36-462b-b68a-8182611d9add",
@@ -40,8 +51,12 @@ export const defaultProducts = [
       "stars": 5,
       "count": 2197
     },
-    "priceCents": 1899,
-    "keywords": ["toaster", "kitchen", "appliances"]
+    "priceCents": 151920,
+    "keywords": [
+      "toaster",
+      "kitchen",
+      "appliances"
+    ]
   },
   {
     "id": "3ebe75dc-64d2-4137-8860-1f5a963e534b",
@@ -51,8 +66,12 @@ export const defaultProducts = [
       "stars": 4,
       "count": 37
     },
-    "priceCents": 2067,
-    "keywords": ["plates", "kitchen", "dining"]
+    "priceCents": 165360,
+    "keywords": [
+      "plates",
+      "kitchen",
+      "dining"
+    ]
   },
   {
     "id": "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
@@ -62,8 +81,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 175
     },
-    "priceCents": 3499,
-    "keywords": ["kitchen", "cookware"]
+    "priceCents": 279920,
+    "keywords": [
+      "kitchen",
+      "cookware"
+    ]
   },
   {
     "id": "dd82ca78-a18b-4e2a-9250-31e67412f98d",
@@ -73,8 +95,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 317
     },
-    "priceCents": 2400,
-    "keywords": ["sweaters", "apparel"]
+    "priceCents": 192000,
+    "keywords": [
+      "sweaters",
+      "apparel"
+    ]
   },
   {
     "id": "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -84,8 +109,14 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 144
     },
-    "priceCents": 3599,
-    "keywords": ["bathroom", "washroom", "restroom", "towels", "bath towels"]
+    "priceCents": 287920,
+    "keywords": [
+      "bathroom",
+      "washroom",
+      "restroom",
+      "towels",
+      "bath towels"
+    ]
   },
   {
     "id": "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
@@ -95,8 +126,13 @@ export const defaultProducts = [
       "stars": 4,
       "count": 99
     },
-    "priceCents": 2374,
-    "keywords": ["kleenex", "tissues", "kitchen", "napkins"]
+    "priceCents": 189920,
+    "keywords": [
+      "kleenex",
+      "tissues",
+      "kitchen",
+      "napkins"
+    ]
   },
   {
     "id": "5968897c-4d27-4872-89f6-5bcb052746d7",
@@ -106,8 +142,14 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 235
     },
-    "priceCents": 2970,
-    "keywords": ["robe", "swimsuit", "swimming", "bathing", "apparel"]
+    "priceCents": 237600,
+    "keywords": [
+      "robe",
+      "swimsuit",
+      "swimming",
+      "bathing",
+      "apparel"
+    ]
   },
   {
     "id": "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
@@ -117,8 +159,13 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 2286
     },
-    "priceCents": 5300,
-    "keywords": ["womens", "shoes", "heels", "sandals"]
+    "priceCents": 424000,
+    "keywords": [
+      "womens",
+      "shoes",
+      "heels",
+      "sandals"
+    ]
   },
   {
     "id": "aad29d11-ea98-41ee-9285-b916638cac4a",
@@ -128,8 +175,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 30
     },
-    "priceCents": 3560,
-    "keywords": ["accessories", "shades"]
+    "priceCents": 284800,
+    "keywords": [
+      "accessories",
+      "shades"
+    ]
   },
   {
     "id": "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
@@ -139,8 +189,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 232
     },
-    "priceCents": 4599,
-    "keywords": ["bedroom", "curtains", "home"]
+    "priceCents": 367920,
+    "keywords": [
+      "bedroom",
+      "curtains",
+      "home"
+    ]
   },
   {
     "id": "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
@@ -150,8 +204,12 @@ export const defaultProducts = [
       "stars": 4,
       "count": 160
     },
-    "priceCents": 1699,
-    "keywords": ["shorts", "apparel", "womens"]
+    "priceCents": 135920,
+    "keywords": [
+      "shorts",
+      "apparel",
+      "womens"
+    ]
   },
   {
     "id": "c2a82c5e-aff4-435f-9975-517cfaba2ece",
@@ -161,8 +219,12 @@ export const defaultProducts = [
       "stars": 5,
       "count": 846
     },
-    "priceCents": 5074,
-    "keywords": ["water kettle", "appliances", "kitchen"]
+    "priceCents": 405920,
+    "keywords": [
+      "water kettle",
+      "appliances",
+      "kitchen"
+    ]
   },
   {
     "id": "58b4fc92-e98c-42aa-8c55-b6b79996769a",
@@ -172,8 +234,12 @@ export const defaultProducts = [
       "stars": 4,
       "count": 89
     },
-    "priceCents": 5390,
-    "keywords": ["shoes", "running shoes", "footwear"]
+    "priceCents": 431200,
+    "keywords": [
+      "shoes",
+      "running shoes",
+      "footwear"
+    ]
   },
   {
     "id": "a82c6bac-3067-4e68-a5ba-d827ac0be010",
@@ -183,8 +249,13 @@ export const defaultProducts = [
       "stars": 4,
       "count": 215
     },
-    "priceCents": 2200,
-    "keywords": ["hats", "straw hats", "summer", "apparel"]
+    "priceCents": 176000,
+    "keywords": [
+      "hats",
+      "straw hats",
+      "summer",
+      "apparel"
+    ]
   },
   {
     "id": "1c079479-8586-494f-ab53-219325432536",
@@ -194,8 +265,13 @@ export const defaultProducts = [
       "stars": 4,
       "count": 229
     },
-    "priceCents": 4590,
-    "keywords": ["shoes", "running shoes", "footwear", "mens"]
+    "priceCents": 367200,
+    "keywords": [
+      "shoes",
+      "running shoes",
+      "footwear",
+      "mens"
+    ]
   },
   {
     "id": "b0f17cc5-8b40-4ca5-9142-b61fe3d98c85",
@@ -205,8 +281,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 2465
     },
-    "priceCents": 3374,
-    "keywords": ["sweaters", "apparel"]
+    "priceCents": 269920,
+    "keywords": [
+      "sweaters",
+      "apparel"
+    ]
   },
   {
     "id": "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
@@ -216,8 +295,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 119
     },
-    "priceCents": 1850,
-    "keywords": ["bathmat", "bathroom", "home"]
+    "priceCents": 148000,
+    "keywords": [
+      "bathmat",
+      "bathroom",
+      "home"
+    ]
   },
   {
     "id": "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
@@ -227,8 +310,13 @@ export const defaultProducts = [
       "stars": 4,
       "count": 326
     },
-    "priceCents": 2640,
-    "keywords": ["shoes", "flats", "womens", "footwear"]
+    "priceCents": 211200,
+    "keywords": [
+      "shoes",
+      "flats",
+      "womens",
+      "footwear"
+    ]
   },
   {
     "id": "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
@@ -238,8 +326,13 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 2556
     },
-    "priceCents": 1599,
-    "keywords": ["tshirts", "shirts", "apparel", "mens"]
+    "priceCents": 127920,
+    "keywords": [
+      "tshirts",
+      "shirts",
+      "apparel",
+      "mens"
+    ]
   },
   {
     "id": "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
@@ -249,8 +342,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 305
     },
-    "priceCents": 2899,
-    "keywords": ["bathroom", "cleaning"]
+    "priceCents": 231920,
+    "keywords": [
+      "bathroom",
+      "cleaning"
+    ]
   },
   {
     "id": "e4f64a65-1377-42bc-89a5-e572d19252e2",
@@ -260,8 +356,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 52
     },
-    "priceCents": 6799,
-    "keywords": ["jewelry", "accessories", "womens"]
+    "priceCents": 543920,
+    "keywords": [
+      "jewelry",
+      "accessories",
+      "womens"
+    ]
   },
   {
     "id": "19c6a64a-5463-4d45-9af8-e41140a4100c",
@@ -271,8 +371,14 @@ export const defaultProducts = [
       "stars": 4,
       "count": 456
     },
-    "priceCents": 4399,
-    "keywords": ["bedroom", "bed sheets", "sheets", "covers", "home"]
+    "priceCents": 351920,
+    "keywords": [
+      "bedroom",
+      "bed sheets",
+      "sheets",
+      "covers",
+      "home"
+    ]
   },
   {
     "id": "d2785924-743d-49b3-8f03-ec258e640503",
@@ -282,8 +388,14 @@ export const defaultProducts = [
       "stars": 5,
       "count": 83
     },
-    "priceCents": 1950,
-    "keywords": ["hats", "winter hats", "beanies", "apparel", "womens"]
+    "priceCents": 156000,
+    "keywords": [
+      "hats",
+      "winter hats",
+      "beanies",
+      "apparel",
+      "womens"
+    ]
   },
   {
     "id": "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
@@ -293,8 +405,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 9017
     },
-    "priceCents": 2290,
-    "keywords": ["pants", "apparel", "mens"]
+    "priceCents": 183200,
+    "keywords": [
+      "pants",
+      "apparel",
+      "mens"
+    ]
   },
   {
     "id": "4df68c27-fd59-4a6a-bbd1-e754ddb6d53c",
@@ -304,8 +420,13 @@ export const defaultProducts = [
       "stars": 3.5,
       "count": 42
     },
-    "priceCents": 3690,
-    "keywords": ["sunglasses", "glasses", "accessories", "shades"]
+    "priceCents": 295200,
+    "keywords": [
+      "sunglasses",
+      "glasses",
+      "accessories",
+      "shades"
+    ]
   },
   {
     "id": "04701903-bc79-49c6-bc11-1af7e3651358",
@@ -315,8 +436,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 562
     },
-    "priceCents": 2499,
-    "keywords": ["footwear", "men", "sneakers"]
+    "priceCents": 199920,
+    "keywords": [
+      "footwear",
+      "men",
+      "sneakers"
+    ]
   },
   {
     "id": "4e37dd03-3b23-4bc6-9ff8-44e112a92c64",
@@ -326,8 +451,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 511
     },
-    "priceCents": 6797,
-    "keywords": ["cooking set", "kitchen"]
+    "priceCents": 543760,
+    "keywords": [
+      "cooking set",
+      "kitchen"
+    ]
   },
   {
     "id": "a434b69f-1bc1-482d-9ce7-cd7f4a66ce8d",
@@ -337,8 +465,13 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 130
     },
-    "priceCents": 2549,
-    "keywords": ["bathroom", "washroom", "mirrors", "home"]
+    "priceCents": 203920,
+    "keywords": [
+      "bathroom",
+      "washroom",
+      "mirrors",
+      "home"
+    ]
   },
   {
     "id": "a45cfa0a-66d6-4dc7-9475-e2b01595f7d7",
@@ -348,8 +481,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 248
     },
-    "priceCents": 3400,
-    "keywords": ["pants", "apparel", "womens"]
+    "priceCents": 272000,
+    "keywords": [
+      "pants",
+      "apparel",
+      "womens"
+    ]
   },
   {
     "id": "d339adf3-e004-4c20-a120-40e8874c66cb",
@@ -359,8 +496,11 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 117
     },
-    "priceCents": 3467,
-    "keywords": ["accessories", "womens"]
+    "priceCents": 277360,
+    "keywords": [
+      "accessories",
+      "womens"
+    ]
   },
   {
     "id": "d37a651a-d501-483b-aae6-a9659b0757a0",
@@ -370,8 +510,11 @@ export const defaultProducts = [
       "stars": 4,
       "count": 126
     },
-    "priceCents": 2899,
-    "keywords": ["food containers", "kitchen"]
+    "priceCents": 231920,
+    "keywords": [
+      "food containers",
+      "kitchen"
+    ]
   },
   {
     "id": "0d7f9afa-2efe-4fd9-b0fd-ba5663e0a524",
@@ -381,8 +524,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 1211
     },
-    "priceCents": 8250,
-    "keywords": ["espresso makers", "kitchen", "appliances"]
+    "priceCents": 660000,
+    "keywords": [
+      "espresso makers",
+      "kitchen",
+      "appliances"
+    ]
   },
   {
     "id": "02e3a47e-dd68-467e-9f71-8bf6f723fdae",
@@ -392,8 +539,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 363
     },
-    "priceCents": 3099,
-    "keywords": ["bedroom", "home", "curtains"]
+    "priceCents": 247920,
+    "keywords": [
+      "bedroom",
+      "home",
+      "curtains"
+    ]
   },
   {
     "id": "8a53b080-6d40-4a65-ab26-b24ecf700bce",
@@ -403,8 +554,12 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 93
     },
-    "priceCents": 2990,
-    "keywords": ["bathroom", "home", "towels"]
+    "priceCents": 239200,
+    "keywords": [
+      "bathroom",
+      "home",
+      "towels"
+    ]
   },
   {
     "id": "10ed8504-57db-433c-b0a3-fc71a35c88a1",
@@ -414,8 +569,12 @@ export const defaultProducts = [
       "stars": 4,
       "count": 89
     },
-    "priceCents": 3390,
-    "keywords": ["shoes", "running shoes", "footwear"]
+    "priceCents": 271200,
+    "keywords": [
+      "shoes",
+      "running shoes",
+      "footwear"
+    ]
   },
   {
     "id": "77a845b1-16ed-4eac-bdf9-5b591882113d",
@@ -425,8 +584,12 @@ export const defaultProducts = [
       "stars": 4,
       "count": 3
     },
-    "priceCents": 10747,
-    "keywords": ["food blenders", "kitchen", "appliances"]
+    "priceCents": 859760,
+    "keywords": [
+      "food blenders",
+      "kitchen",
+      "appliances"
+    ]
   },
   {
     "id": "bc2847e9-5323-403f-b7cf-57fde044a955",
@@ -436,29 +599,597 @@ export const defaultProducts = [
       "stars": 4.5,
       "count": 3157
     },
-    "priceCents": 3800,
-    "keywords": ["sweaters", "hoodies", "apparel", "mens"]
+    "priceCents": 304000,
+    "keywords": [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ]
   },
   {
-    "id": "36c64692-677f-4f58-b5ec-0dc2cf109e27",
-    "image": "images/products/artistic-bowl-set-6-piece.jpg",
-    "name": "Artistic Bowl and Plate Set - 6 Pieces",
+    "id": "new-prod-0-1777864584103",
+    "image": "images/products/2-slot-toaster-white.jpg",
+    "name": "Smart Electric Toaster 68",
     "rating": {
-      "stars": 5,
-      "count": 679
+      "stars": 3.2,
+      "count": 230
     },
-    "priceCents": 3899,
-    "keywords": ["bowls set", "kitchen"]
+    "priceCents": 509100,
+    "keywords": [
+      "Kitchen"
+    ]
   },
   {
-    "id": "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
-    "image": "images/products/kitchen-paper-towels-8-pack.jpg",
-    "name": "2-Ply Kitchen Paper Towels - 8 Pack",
+    "id": "new-prod-1-1777864584103",
+    "image": "images/products/countertop-push-blender-black.jpg",
+    "name": "High-Speed Countertop Blender 94",
+    "rating": {
+      "stars": 4.4,
+      "count": 26
+    },
+    "priceCents": 491300,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-2-1777864584103",
+    "image": "images/products/men-stretch-wool-sweater-black.jpg",
+    "name": "Merino Wool Blend Sweater 65",
+    "rating": {
+      "stars": 3.3,
+      "count": 151
+    },
+    "priceCents": 200800,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-3-1777864584103",
+    "image": "images/products/bathroom-mat.jpg",
+    "name": "Plush Bathroom Bath Mat 67",
+    "rating": {
+      "stars": 4.3,
+      "count": 318
+    },
+    "priceCents": 162300,
+    "keywords": [
+      "Home"
+    ]
+  },
+  {
+    "id": "new-prod-4-1777864584103",
+    "image": "images/products/women-striped-beach-dress.jpg",
+    "name": "Striped Summer Beach Dress 11",
+    "rating": {
+      "stars": 3.7,
+      "count": 448
+    },
+    "priceCents": 196400,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-5-1777864584103",
+    "image": "images/products/men-brown-flat-sneakers.jpg",
+    "name": "Casual Flat Sneakers 47",
+    "rating": {
+      "stars": 3.2,
+      "count": 342
+    },
+    "priceCents": 233400,
+    "keywords": [
+      "Footwear"
+    ]
+  },
+  {
+    "id": "new-prod-6-1777864584104",
+    "image": "images/products/countertop-push-blender-black.jpg",
+    "name": "High-Speed Countertop Blender 80",
+    "rating": {
+      "stars": 4.8,
+      "count": 225
+    },
+    "priceCents": 373300,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-7-1777864584104",
+    "image": "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Premium Cotton T-Shirt 3",
+    "rating": {
+      "stars": 3.8,
+      "count": 339
+    },
+    "priceCents": 80900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-8-1777864584104",
+    "image": "images/products/sky-leaf-branch-earrings.jpg",
+    "name": "Crystal Zirconia Stud Earrings 66",
+    "rating": {
+      "stars": 3.6,
+      "count": 501
+    },
+    "priceCents": 115600,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-9-1777864584104",
+    "image": "images/products/men-chino-pants-beige.jpg",
+    "name": "Classic Fit Chino Pants 2",
+    "rating": {
+      "stars": 3.1,
+      "count": 206
+    },
+    "priceCents": 154200,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-10-1777864584104",
+    "image": "images/products/artistic-bowl-set-6-piece.jpg",
+    "name": "Artistic Ceramic Bowl Set 58",
+    "rating": {
+      "stars": 4.3,
+      "count": 149
+    },
+    "priceCents": 273400,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-11-1777864584104",
+    "image": "images/products/blackout-curtains-set-teal - Copy.jpg",
+    "name": "Premium Blackout Curtains 30",
+    "rating": {
+      "stars": 4.8,
+      "count": 316
+    },
+    "priceCents": 238700,
+    "keywords": [
+      "Home"
+    ]
+  },
+  {
+    "id": "new-prod-12-1777864584104",
+    "image": "images/products/women-knit-beanie-pom-pom-blue.jpg",
+    "name": "Winter Knit Pom Beanie 73",
+    "rating": {
+      "stars": 3.5,
+      "count": 351
+    },
+    "priceCents": 71300,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-13-1777864584104",
+    "image": "images/products/athletic-skateboard-shoes-gray.jpg",
+    "name": "Pro Athletic Running Shoes 63",
+    "rating": {
+      "stars": 4.3,
+      "count": 166
+    },
+    "priceCents": 270300,
+    "keywords": [
+      "Footwear"
+    ]
+  },
+  {
+    "id": "new-prod-14-1777864584104",
+    "image": "images/products/vanity-mirror-pink.jpg",
+    "name": "Premium Item 99",
+    "rating": {
+      "stars": 3,
+      "count": 294
+    },
+    "priceCents": 57700,
+    "keywords": [
+      "General"
+    ]
+  },
+  {
+    "id": "new-prod-15-1777864584104",
+    "image": "images/products/non-stick-cooking-set-4-pieces.jpg",
+    "name": "Non-Stick Cooking Pot Set 59",
+    "rating": {
+      "stars": 3.3,
+      "count": 133
+    },
+    "priceCents": 335000,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-16-1777864584104",
+    "image": "images/products/men-golf-polo-t-shirt-gray.jpg",
+    "name": "Performance Golf Polo 61",
+    "rating": {
+      "stars": 3.3,
+      "count": 467
+    },
+    "priceCents": 96200,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-17-1777864584104",
+    "image": "images/products/knit-athletic-sneakers-gray.jpg",
+    "name": "Pro Athletic Running Shoes 30",
+    "rating": {
+      "stars": 3.4,
+      "count": 452
+    },
+    "priceCents": 252700,
+    "keywords": [
+      "Footwear"
+    ]
+  },
+  {
+    "id": "new-prod-18-1777864584104",
+    "image": "images/products/glass-screw-lid-food-containers.jpg",
+    "name": "Premium Item 95",
+    "rating": {
+      "stars": 3.8,
+      "count": 158
+    },
+    "priceCents": 53500,
+    "keywords": [
+      "General"
+    ]
+  },
+  {
+    "id": "new-prod-19-1777864584104",
+    "image": "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Premium Cotton T-Shirt 17",
+    "rating": {
+      "stars": 3.9,
+      "count": 408
+    },
+    "priceCents": 104900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-20-1777864584104",
+    "image": "images/products/men-stretch-wool-sweater-black.jpg",
+    "name": "Merino Wool Blend Sweater 91",
+    "rating": {
+      "stars": 3.1,
+      "count": 262
+    },
+    "priceCents": 230900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-21-1777864584104",
+    "image": "images/products/women-relaxed-lounge-pants-pink.jpg",
+    "name": "Relaxed Lounge Pants 23",
+    "rating": {
+      "stars": 3.8,
+      "count": 435
+    },
+    "priceCents": 171900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-22-1777864584104",
+    "image": "images/products/non-stick-cooking-set-4-pieces.jpg",
+    "name": "Non-Stick Cooking Pot Set 75",
+    "rating": {
+      "stars": 3.4,
+      "count": 311
+    },
+    "priceCents": 328900,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-23-1777864584104",
+    "image": "images/products/round-sunglasses-gold.jpg",
+    "name": "Vintage Round Sunglasses 97",
+    "rating": {
+      "stars": 3.6,
+      "count": 419
+    },
+    "priceCents": 103300,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-24-1777864584104",
+    "image": "images/products/women-plain-cotton-oversized-sweater-gray.jpg",
+    "name": "Cozy Fleece Winter Hoodie 55",
     "rating": {
       "stars": 4.5,
-      "count": 1045
+      "count": 126
     },
-    "priceCents": 1899,
-    "keywords": ["kitchen", "kitchen towels", "tissues"]
+    "priceCents": 253900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-25-1777864584104",
+    "image": "images/products/sky-leaf-branch-earrings.jpg",
+    "name": "Crystal Zirconia Stud Earrings 58",
+    "rating": {
+      "stars": 4.5,
+      "count": 26
+    },
+    "priceCents": 124200,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-26-1777864584104",
+    "image": "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Premium Cotton T-Shirt 77",
+    "rating": {
+      "stars": 3.8,
+      "count": 470
+    },
+    "priceCents": 96700,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-27-1777864584104",
+    "image": "images/products/women-sandal-heels-white-pink.jpg",
+    "name": "Elegant Women's Sandals 91",
+    "rating": {
+      "stars": 3.4,
+      "count": 396
+    },
+    "priceCents": 148600,
+    "keywords": [
+      "Footwear"
+    ]
+  },
+  {
+    "id": "new-prod-28-1777864584104",
+    "image": "images/products/men-stretch-wool-sweater-black.jpg",
+    "name": "Merino Wool Blend Sweater 28",
+    "rating": {
+      "stars": 3.2,
+      "count": 179
+    },
+    "priceCents": 241900,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-29-1777864584104",
+    "image": "images/products/straw-sunhat.jpg",
+    "name": "Classic Straw Sun Hat 67",
+    "rating": {
+      "stars": 3.5,
+      "count": 152
+    },
+    "priceCents": 60700,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-30-1777864584104",
+    "image": "images/products/women-plain-cotton-oversized-sweater-gray.jpg",
+    "name": "Cozy Fleece Winter Hoodie 72",
+    "rating": {
+      "stars": 3.6,
+      "count": 111
+    },
+    "priceCents": 248700,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-31-1777864584104",
+    "image": "images/products/kitchen-paper-towels-8-pack.jpg",
+    "name": "Luxury Cotton Bath Towel Set 21",
+    "rating": {
+      "stars": 3.3,
+      "count": 311
+    },
+    "priceCents": 204400,
+    "keywords": [
+      "Home"
+    ]
+  },
+  {
+    "id": "new-prod-32-1777864584104",
+    "image": "images/products/luxury-towel-set.jpg",
+    "name": "Luxury Cotton Bath Towel Set 97",
+    "rating": {
+      "stars": 3.2,
+      "count": 373
+    },
+    "priceCents": 160800,
+    "keywords": [
+      "Home"
+    ]
+  },
+  {
+    "id": "new-prod-33-1777864584104",
+    "image": "images/products/elegant-white-dinner-plate-set.jpg",
+    "name": "Ceramic Dining Plate Set 47",
+    "rating": {
+      "stars": 4.1,
+      "count": 147
+    },
+    "priceCents": 282800,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-34-1777864584104",
+    "image": "images/products/duvet-cover-set-gray-queen.jpg",
+    "name": "Diamond Pattern Duvet Cover 51",
+    "rating": {
+      "stars": 4.1,
+      "count": 146
+    },
+    "priceCents": 196400,
+    "keywords": [
+      "Home"
+    ]
+  },
+  {
+    "id": "new-prod-35-1777864584104",
+    "image": "images/products/men-navigator-sunglasses-black.jpg",
+    "name": "Vintage Round Sunglasses 99",
+    "rating": {
+      "stars": 4.2,
+      "count": 213
+    },
+    "priceCents": 104600,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-36-1777864584104",
+    "image": "images/products/non-stick-cooking-set-4-pieces.jpg",
+    "name": "Non-Stick Cooking Pot Set 8",
+    "rating": {
+      "stars": 3.3,
+      "count": 479
+    },
+    "priceCents": 354500,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-37-1777864584104",
+    "image": "images/products/countertop-push-blender-black.jpg",
+    "name": "High-Speed Countertop Blender 24",
+    "rating": {
+      "stars": 3.6,
+      "count": 420
+    },
+    "priceCents": 405000,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-38-1777864584104",
+    "image": "images/products/countertop-push-blender-black.jpg",
+    "name": "High-Speed Countertop Blender 29",
+    "rating": {
+      "stars": 3.2,
+      "count": 271
+    },
+    "priceCents": 387000,
+    "keywords": [
+      "Kitchen"
+    ]
+  },
+  {
+    "id": "new-prod-39-1777864584104",
+    "image": "images/products/women-relaxed-lounge-pants-pink.jpg",
+    "name": "Relaxed Lounge Pants 72",
+    "rating": {
+      "stars": 4.2,
+      "count": 478
+    },
+    "priceCents": 161400,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-40-1777864584104",
+    "image": "images/products/facial-tissue-2-ply-8-boxes.jpg",
+    "name": "Ultra Soft Facial Tissues 98",
+    "rating": {
+      "stars": 4.1,
+      "count": 106
+    },
+    "priceCents": 57800,
+    "keywords": [
+      "Household"
+    ]
+  },
+  {
+    "id": "new-prod-41-1777864584104",
+    "image": "images/products/round-sunglasses-gold.jpg",
+    "name": "Vintage Round Sunglasses 92",
+    "rating": {
+      "stars": 4.1,
+      "count": 497
+    },
+    "priceCents": 109900,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-42-1777864584104",
+    "image": "images/products/women-plain-cotton-oversized-sweater-gray.jpg",
+    "name": "Cozy Fleece Winter Hoodie 81",
+    "rating": {
+      "stars": 4,
+      "count": 154
+    },
+    "priceCents": 262100,
+    "keywords": [
+      "Apparel"
+    ]
+  },
+  {
+    "id": "new-prod-43-1777864584104",
+    "image": "images/products/women-knit-beanie-pom-pom-blue.jpg",
+    "name": "Winter Knit Pom Beanie 45",
+    "rating": {
+      "stars": 3.1,
+      "count": 370
+    },
+    "priceCents": 70700,
+    "keywords": [
+      "Accessories"
+    ]
+  },
+  {
+    "id": "new-prod-44-1777864584104",
+    "image": "images/products/women-relaxed-lounge-pants-pink.jpg",
+    "name": "Relaxed Lounge Pants 28",
+    "rating": {
+      "stars": 4.9,
+      "count": 434
+    },
+    "priceCents": 132800,
+    "keywords": [
+      "Apparel"
+    ]
   }
 ];

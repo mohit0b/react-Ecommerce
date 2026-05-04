@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+dist/
+*.sqlite
+.env
+ecommerce-frontend/dist/
+ecommerce-backend/dist/
+ecommerce-backend/database.sqlite
